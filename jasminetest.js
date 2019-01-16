@@ -1,5 +1,22 @@
-var express = require('express');
-var app = express();
+const express = require('express');
+const app = express();
+const logger = require('morgan');
+const bodyParser = require('body-parser');
+
+const apiRouter = express.Router();
+
+app.use(logger('dev', {}));
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({
+  extended: true
+}));
+
+app.use('/api', apiRouter);
+
+apiRouter.post('/jskill', function(req, res) {
+  const responseBody = {
+    version: "2.0
+
 
 app.get('/', function(req, res) {
 	res.send("it's test for jasmine:)\n어떻게 하는거야 이거\n편집기만 쓰면 뭐해 엉엉");
@@ -13,6 +30,6 @@ app.post('/', function(req, res) {
 });
 
 app.listen(8080, function() {
-	console.log('리쓴 8080! :D 스킬붙이는거 알려줘요 알파');
+	console.log('리쓴 8080! :D');
 });
 
