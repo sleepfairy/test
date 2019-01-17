@@ -34,6 +34,3 @@ apiRouter.post('/jskill', function(req, res) {
 app.listen(8080, function() {
 	console.log('리쓴 8080! :D');
 });
-
-
-console.log(test-ing)
