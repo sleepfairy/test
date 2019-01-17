@@ -20,7 +20,7 @@ apiRouter.post('/jskill', function(req, res) {
 			"outputs": [
 				{
 					"simpleText": {
-						"text": "hello I'm jasmine :)"
+						"text": "re-test hi! :)"
 					}
 				}
 			]
@@ -34,3 +34,6 @@ apiRouter.post('/jskill', function(req, res) {
 app.listen(8080, function() {
 	console.log('리쓴 8080! :D');
 });
+
+
+console.log(test-ing)
